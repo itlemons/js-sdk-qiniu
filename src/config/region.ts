@@ -5,7 +5,9 @@ export const region = {
   z2: 'z2',
   na0: 'na0',
   as0: 'as0',
-  cnEast2: 'cn-east-2'
+  cnEast2: 'cn-east-2',
+  apSoutheast3: "ap-southeast-3",
+
 } as const
 
 /** 上传区域对应的 host */
@@ -33,5 +35,9 @@ export const regionUphostMap = {
   [region.cnEast2]: {
     srcUphost: ['up-cn-east-2.qiniup.com'],
     cdnUphost: ['upload-cn-east-2.qiniup.com']
+  },
+  [region.apSoutheast3]: {
+    srcUphost: ["up-ap-southeast-3.qiniup.com"],
+    cdnUphost: ["upload-ap-southeast-3.qiniup.com"],
   }
 } as const
